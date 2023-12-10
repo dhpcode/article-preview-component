@@ -1,3 +1,10 @@
+:root {
+  --dark-grayish-blue: #48556a;
+  --desaturated-blue: #6d7f97;
+  --grayish-blue: #9eafc2;
+  --light-grayish-blue: #ecf2f8;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -16,10 +23,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #f2f2f2;
   color: #222;
 }
 
@@ -69,9 +76,13 @@ select:-webkit-autofill:focus {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1500px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -81,6 +92,116 @@ select:-webkit-autofill:focus {
 .main-content {
   flex-grow: 1;
 }
+
+
+.article-container {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.50);
+  overflow: hidden;
+}
+
+.article-container__image {
+  display: flex;
+}
+
+.article-container__img {
+  display: block;
+  width: 327px;
+  height: 200px;
+}
+
+.article-container__bottom {}
+
+.article-container__bottom-top {
+  padding: 36px 32px 12px;
+}
+
+.article-container__bottom-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+
+.article-container__bottom-link {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+}
+
+.article-container__bottom-link:hover {
+  /* opacity: 0.8; */
+  color: #b2b2e6;
+}
+
+.article-container__bottom-text {
+  color: #6E8098;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.122px;
+}
+
+.acticle-container__bottom-writer {
+  display: flex;
+  padding: 20px 32px;
+}
+
+.writer {
+  display: flex;
+  align-items: center;
+}
+
+.writer__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.writer__div {
+  margin-right: 59px;
+}
+
+.writer__name {
+  color: var(--dark-grayish-blue);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  /* 153.846% */
+  letter-spacing: 0.122px;
+}
+
+.writer__date {
+  color: #9DAEC2;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 153.846% */
+  letter-spacing: 0.122px;
+
+}
+
+.share-img {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* RETINA BACKGROUNDS */

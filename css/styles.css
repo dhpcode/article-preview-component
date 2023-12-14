@@ -147,15 +147,14 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.122px;
 }
 
-.acticle-container__bottom-writer {
-  display: flex;
-  padding: 20px 32px;
+.article-container__bottom-bottom {
+  position: relative;
 }
 
 .writer {
+  padding: 20px 32px;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .writer__img {
@@ -196,13 +195,22 @@ select:-webkit-autofill:focus {
 
 
 /* Share block */
-.share-block {
-  display: none;
-  position: absolute;
-  background-color: var(--dark-grayish-blue);
+.article-container__bottom--open .share-block {
   display: flex;
   align-items: center;
-  padding: 22px 32px;
+  background-color: var(--dark-grayish-blue);
+  padding: 16px 32px;
+  min-width: 327px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.share-block {
+  display: none;
+}
+
+.share-block--open {
+  display: block;
 }
 
 .share-block__text {
@@ -214,7 +222,7 @@ select:-webkit-autofill:focus {
   /* 153.846% */
   letter-spacing: 5px;
   margin-right: 21px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
 .share-block__socials-list {

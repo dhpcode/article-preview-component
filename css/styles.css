@@ -117,7 +117,7 @@ select:-webkit-autofill:focus {
 .article-container__bottom {}
 
 .article-container__bottom-top {
-  padding: 36px 32px 12px;
+  padding: 36px 32px 20px;
 }
 
 .article-container__bottom-title {
@@ -152,7 +152,7 @@ select:-webkit-autofill:focus {
 }
 
 .writer {
-  padding: 20px 32px;
+  padding: 12px 32px 20px;
   display: flex;
   align-items: center;
 }
@@ -251,7 +251,12 @@ select:-webkit-autofill:focus {
 }
 
 .share-block__img {
+  /* display: block; */
+  flex-shrink: 0;
+  flex-grow: 1;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
 }
 
 

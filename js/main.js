@@ -7,11 +7,11 @@ elShare.addEventListener('click', function() {
     elBottomBlock.classList.add('article-container__bottom--open');
 });
 
-// elBody.addEventListener('onclick', function() {
-//     elBottomBlock.classList.remove('article-container__bottom--open');
-// });
 
 elShareBlockImg.addEventListener('click', function() {
     elBottomBlock.classList.remove('article-container__bottom--open');
 });
 
+elBody.addEventListener('onclick', function() {
+    elBottomBlock.classList.remove('article-container__bottom--open');
+});
